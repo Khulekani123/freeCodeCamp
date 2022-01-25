@@ -426,6 +426,7 @@ width: 100%;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 .contact
 {
+  background-color: #cccccc;
   position: relative;
   min-height: 100vh;
   padding: 50px 100px;
@@ -444,6 +445,7 @@ width: 100%;
   font-size: 36px;
   font-weight: 500;
 }
+
 .container
 {
   width: 100%;
@@ -558,7 +560,7 @@ body{
 {
   font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-weight: 500;
   position: relative;
 }
@@ -571,5 +573,42 @@ body{
   background: #544f4b;
   height: 2px;
   box-sizing: border-box;
-  width: 50px;
+  width: 95px;
 }
+.footer-col ul li a:hover
+{
+  color: #544f4b;
+  padding-left: 8px;
+}
+.footer-col .sociallinks a
+{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #544f4b;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: aliceblue;
+  transition: all 0.5s ease;
+}
+.footer-col .sociallinks a:hover
+{
+  color: #544f4b;
+  background-color: aliceblue;
+}
+@media(max-width: 767px)
+{
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px)
+{
+  .footer-col{
+    width: 100%;
+  }
+}
+

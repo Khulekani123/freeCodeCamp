@@ -33,7 +33,7 @@
                        </div>
                      </div>
                    </li>
-                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="footer.html">ABOUT US</a></li>
                     <li><a href="login.html">BOOK US</a></li>
                 </ul>
             </div>

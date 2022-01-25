@@ -1,0 +1,106 @@
+/*----User Booking Page----*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Teliviga&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_bg
+{
+  background-image: url(wed/food1.jpeg);
+  max-width: 1980px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bform
+{
+  width: 800px;
+  height: 1400px;
+  background-color: #2d6963;
+}
+.bformm-text
+{
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+  margin: 40px 0;
+}
+.bform_group p
+{
+    font-family: 'Akaya Telivigala', cursive;
+    text-align: center;
+    font-size: 17px;
+    color: cornsilk;
+}
+.main-form div
+{
+  font-family: 'Akaya Telivigala', cursive;
+  margin: 10px 20px ;
+  width: 300px ;
+  display: inline-block;
+}
+
+.main-form div input
+{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid burlywood;
+    font-size: 17px;
+    color: cornsilk;
+    outline: none;
+    padding: 3px 0 10px;
+    margin-top: 10px;
+}
+.col-25
+{
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+  color: cornsilk;
+  font-size: 17px;
+  display: inline-block;
+  border: 1px solid burlywood;
+  font-size: 17px;
+  color: cornsilk;
+  outline: none;
+  padding: 3px 0 10px;
+  margin-top: 10px;
+}
+ .col-75
+ {
+  font-family: 'Akaya Telivigala', cursive;
+  text-color: cornsilk;
+  background-color: #2d6963 ;
+ }
+.main-form div span
+{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: cornsilk;
+    font-size: 17px;
+}
+#submit
+{
+    width: 100%;
+    text-align: center;
+}
+#submit input
+{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: crimson !important;
+    transition: all .3s;
+}
+#submit input:hover
+{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: rgb(0, 104, 81) !important;
+    color: #fff !important;
+}
+#submit input:active
+{
+    font-size: 19px;
+    background-color: rgb(0, 104, 81) !important;
+    color: #fff !important;
+}

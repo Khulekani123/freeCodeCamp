@@ -8,6 +8,37 @@
         <link rel ="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
+        <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+            <div class="container d-flex">
+                <div class="contact-info mr-auto">
+                    <p>
+                       " Stay safe! Visit "
+                        <a href="https://sacoronavirus.co.za/" style = "color:white" target= "_blank"> sacoronavirus.co.za</a> " for official COVID-19 information. "
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class = "header">
+            <nav class="navbar navbar-custom">
+                <div class = "nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">OUR SERVICES</a></li>
+                        <li id = "header-logo" class>
+                         <div class = "header-logo-section">
+                           <div class = "logo">
+                           <a href = "index.html">
+                           <img class = "logo-theme-main logo-theme-custom" src="wed/pundrulu.png" alt ="logo">
+                           </a>
+                           </div>
+                         </div>
+                       </li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="login.html">BOOK US</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
         <footer class = "footer">
             <div class = "containerf">
                 <div class = "row">

@@ -7,6 +7,16 @@
     </head>
 
     <body>
+        <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+            <div class="container d-flex">
+                <div class="contact-info mr-auto">
+                    <p>
+                       " Stay safe! Visit "
+                        <a href="https://sacoronavirus.co.za/" style = "color:white" target= "_blank"> sacoronavirus.co.za</a> " for official COVID-19 information. "
+                    </p>
+                </div>
+            </div>
+        </div>
         <section class = "header">
             <nav class="navbar navbar-custom">
                 <div class = "nav-links">
@@ -52,7 +62,7 @@
                 <input type= "text" class= "input-field" placeholder= "Last name" required>
                 <input type= "text" class= "input-field" placeholder= "Gender" required>
                 <input type= "email" class= "input-field" placeholder= "Email" required>
-                <input type= "number" class= "input-field" placeholder= "Contact" required>
+                <input type= "text" class= "input-field" placeholder= "Contact" required>
                 <input type= "text" class= "input-field" placeholder= "Province" required>
                 <input type= "text" class= "input-field" placeholder= "Town" required>
                 <input type= "checkbox" class= "check-box"> <span> I agree to the terms & conditions.</span>
@@ -82,4 +92,31 @@
      </script>
     </body>
 </html>
-   
+
+<?php
+include 'conn.php';
+
+if(!isset($_POST['save']))
+{
+    $user_Fname = $_POST['user_Fname'];
+    $user_Lname = $_POST['user_Lname'];
+    $user_Gender = $_POST['user_Gender'];
+    $user_email = $_POST['user_Email'];
+    $user_contact = $_POST['user_Contact'];
+    $user_province = $_POST['user_Province'];
+    $town = $_POST['town'];
+    $user_password = $_POST['user_password'];
+}
+
+$query = "INSERT INTO user (user_Fname, user_Lname, user_Gender, user_Email, user_Contact, user_Province, town, user_password)
+VALUES ('$user_Fname', '$user_Lname', '$user_Gender', '$user_Email', '$user_Contact', '$user_Province', '$town', '$user_password')";
+
+if(mysqli_query($dbconn, $query))
+{
+    echo "";
+}
+        else{
+            echo "Error: " .$sql . ":-" . mysqli_error($conn);
+        }
+    
+
